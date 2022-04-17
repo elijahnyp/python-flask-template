@@ -35,6 +35,7 @@ RUN pip install --user -r requirements.txt
 
 #install function code
 USER root
+RUN pip install -r requirements.txt
 COPY function/   .
 RUN chown -R app:app ../
 
